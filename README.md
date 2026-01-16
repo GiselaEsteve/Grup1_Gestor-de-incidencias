@@ -54,7 +54,7 @@ El projecte segueix el patró **Model-Vista-Controlador (MVC)**, separant claram
   * Comunica la vista amb el model
 
 ### Estructura de paquets
-
+```
 cat.nomprojecte
 ├── app
 ├── controlador
@@ -64,7 +64,7 @@ cat.nomprojecte
 │   ├── repositori
 │   └── servei
 └── vista
-
+```
 ---
 
 ## 4. Funcionalitats principals

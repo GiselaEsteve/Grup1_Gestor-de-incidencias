@@ -1,6 +1,6 @@
 package cat.gestorincidencias.model.enums;
 
-public enum EstatIncidencies {
+public enum EstatIncidencia {
     NOVA,
     EN_PROCES,
     RESOLTA,

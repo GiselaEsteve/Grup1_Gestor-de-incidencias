@@ -36,6 +36,8 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
             return llista;
         }
 
+
+        //AJUDA D'IA
         try (BufferedReader br = new BufferedReader(new FileReader(f))) {
             String linia;
 
@@ -61,6 +63,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
     public void guardar(List<Incidencia> incidencies){
         File f = new File(rutaFitxer);
 
+        //AJUDA D'IA
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(f))) {
             bw.write("# TIPUS;ID;TITOL;DESCRIPCIO;GRAVETAT;ESTAT;DATA_CREACIO;ASSIGNADA_A;EXTRA");
             bw.newLine();
@@ -98,6 +101,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
             assignada = netejarText(inc.getAssignadaA());
         }
 
+        //AJUDA D'IA
         //Crea una línia unint tots els camps amb ";"
         String linia = tipus + ";" + inc.getId() + ";" + netejarText(inc.getTitol()) + ";" + netejarText(inc.getDescripcio()) + ";" + inc.getGravetat().name() + ";" + inc.getEstat().name() + ";" + inc.getDataCreacio().toString() + ";" + assignada + ";" + netejarText(extra);
         
@@ -114,7 +118,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
             return null;
         }
 
-        // Extreu cada camp
+        // Extreu cada camp (AJUDA D'IA)
         String tipus = parts[0].trim();
         int id = Integer.parseInt(parts[1].trim());
         String titol = parts[2].trim();
@@ -127,6 +131,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
         // Crea l'objecte segons el tipus
         Incidencia incidencia;
         
+        //AJUDA D'IA
         if (tipus.equalsIgnoreCase("PHISHING")) {
             incidencia = new IncidenciaPhishing(id, titol, descripcio, gravetat, campExtra);
         } else if (tipus.equalsIgnoreCase("MALWARE")) {
@@ -139,7 +144,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
         // Restaura l'estat
         incidencia.canviarEstat(estat);
 
-        // Restaura l'assignació (si n'hi ha)
+        // Restaura l'assignació
         if (!assignadaA.equals("-") && !assignadaA.isEmpty()) {
             incidencia.assignadaA(assignadaA);
             incidencia.canviarEstat(estat); // Torna a posar l'estat correcte
@@ -153,7 +158,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
         if (text == null) {
             return "-";
         }
-        // Substitueix els ";" per "," per no trencar el format
+        // Substitueix els ";" per "," per no trencar el format (AJUDA D'IA)
         return text.replace(";", ",").trim();
     }
 }

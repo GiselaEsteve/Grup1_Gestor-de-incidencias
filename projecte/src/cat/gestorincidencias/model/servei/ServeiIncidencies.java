@@ -58,7 +58,7 @@ public class ServeiIncidencies {
 
     public void assignarIncidencia(int id, String nom) {
         Incidencia inc = buscarPerId(id);
-        if (inc != null) inc.assignarA(nom); // FIX: assignarA
+        if (inc != null) inc.assignadaA(nom); // FIX: assignarA
     }
 
     public void canviarEstat(int id, EstatIncidencia nouEstat) {

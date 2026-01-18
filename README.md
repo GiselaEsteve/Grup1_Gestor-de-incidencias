@@ -81,15 +81,26 @@ cat.nomprojecte
 
 ## 5. Ús d’Intel·ligència Artificial
 
+Durant el desenvolupament d'aquest projecte, s'ha utilitzat IA com a eina d'assistència per resoldre dubtes de programació i millorar la comprensió del codi.
+
+Aspectes en els quals l'IA ha ajudat:
+
+1.  Resolució d'errors
+La IA ha ajudat a detectar errors en construciors i en variables no inicialitzades. A més a més, ha ajudat amb la millora de la gestió d'errors.  
+
+2. Gestió de fitxers
+També s'ha usat IA per la gestió de fitxers, ja que no hi havia coneixaments prèvis. Ens va explicar com utilitzar BufferedReader i BufferedWriter, ens va ensenyar com llegir línia per línia amb readLine(), ens va mostrar com gestionar excepcions amb IOException, ens va explicar el .equalsIgnoreCase() i com convertir una línia de text del fitxer en objecte incidencia. 
 
 ---
 
 ## 6. Limitacions i millores futures
 
-* 
+En aquest projecte, s'han trobat diverses limitacions degudes principalment a la poca d'experiència prèvia amb alguns aspectes de la programació en Java.
+
+La gestió de fitxers haa sigut un dels principals reptes, ja que no teníem coneixements previs sobre com llegir i escriure dades en fitxers de text. Això ha dificultat la implementació de la persistència de dades i ha requerit molta assistència per entendre conceptes. 
 
 ---
 
 ## Treball fet per:
 
-Gisela Esteve, Sara Figuls i Emma Rosendo
+Gisela Esteve, Sara Fíguls i Emma Rosendo

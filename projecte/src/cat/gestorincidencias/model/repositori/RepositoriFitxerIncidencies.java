@@ -50,6 +50,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
                 }
             }
 
+        //Per si hi ha exepcions
         } catch (IOException e) {
             System.out.println("Error llegint el fitxer d'incidències: " + e.getMessage());
         }
@@ -70,6 +71,7 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
                 bw.newLine();
             }
 
+        //Per si hi ha exepcions
         } catch (IOException e) {
             System.out.println("Error guardant el fitxer d'incidències: " + e.getMessage());
         }

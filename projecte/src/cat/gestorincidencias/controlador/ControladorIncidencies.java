@@ -8,12 +8,10 @@ import cat.gestorincidencias.model.incidencies.Incidencia;
 import cat.gestorincidencias.model.servei.ServeiIncidencies;
 
 public class ControladorIncidencies {
-    private final ServeiIncidencies servei;
+
+    private ServeiIncidencies servei;
 
     public ControladorIncidencies(ServeiIncidencies servei) {
-        if (servei == null) {
-            System.out.println("ERROR: El servei no pot ser null.");
-        }
         this.servei = servei;
     }
 
@@ -53,3 +51,4 @@ public class ControladorIncidencies {
         servei.desar();
     }
 }
+

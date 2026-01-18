@@ -6,7 +6,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -122,7 +121,6 @@ public class RepositoriFitxerIncidencies implements RepositoriIncidencies{
         String descripcio = parts[3].trim();
         Gravetat gravetat = Gravetat.valueOf(parts[4].trim());
         EstatIncidencia estat = EstatIncidencia.valueOf(parts[5].trim());
-        LocalDateTime dataCreacio = LocalDateTime.parse(parts[6].trim());
         String assignadaA = parts[7].trim();
         String campExtra = parts[8].trim();
 
